@@ -4,136 +4,181 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WebStudio</title>
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header>
-      <nav>
-        <a href="./index.html"><span>Web</span>Studio</a>
-        <ul>
-          <li><a href="">Студия</a></li>
-          <li><a href="">Портфолио</a></li>
-          <li><a href="">Контакты</a></li>
+      <nav class="nav">
+        <a class="nav-logo" href="./index.html"><span class="logo-style">Web</span>Studio</a>
+        <ul class="nav list">
+          <li class="nav-list-item"><a class="nav-list-item link" href="./index.html">Студия</a></li>
+          <li class="nav-list-item"><a class="nav-list-item link" href="./porfolio.html"><span class="marker link">Портфолио</span> </a></li>
+          <li class="nav-list-item"><a class="nav-list-item link" href="">Контакты</a></li>
         </ul>
       </nav>
-      <ul>
-        <li>
-          <a href="mailto:info@devstudio.com" title="Отправить письмо">info@devstudio.com</a>
+      <ul class="contacts list">
+        <li class="contact-list-item">
+          <a class=" contact-list-item link" href="mailto:info@devstudio.com" title="Отправить письмо"
+            >info@devstudio.com</a
+          >
         </li>
         <li>
-          <a href="tel:+380961111111" title="Набрать номер">+38 096 111 11 11</a>
+          <a class="contact-list-item link" href="tel:+380961111111" title="Набрать номер">+38 096 111 11 11</a>
         </li>
       </ul>
     </header>
 
     <main>
       <!-- section hero -->
-      <section>
+      <section class="portfolio">
         <h1>Портфолио</h1>
-        <ul>
-          <li><button type="button" aria-label="Примеры портфолио">Все</button></li>
-          <li><button type="button" aria-label="Примеры портфолио">Веб-сайты</button></li>
-          <li><button type="button" aria-label="Примеры портфолио">Приложения</button></li>
-          <li><button type="button" aria-label="Примеры портфолио">Приложения</button></li>
-          <li><button type="button" aria-label="Примеры портфолио">Приложения</button></li>
+        <ul class="check list">
+          <li class="check-list-item"><button class="btn" type="button" aria-label="Примеры портфолио">Все</button></li>
+          <li class="check-list-item">
+            <button class="btn" type="button" aria-label="Примеры портфолио">Веб-сайты</button>
+          </li>
+          <li class="check-list-item">
+            <button class="btn" type="button" aria-label="Примеры портфолио">Приложения</button>
+          </li>
+          <li class="check-list-item">
+            <button class="btn" type="button" aria-label="Примеры портфолио">Приложения</button>
+          </li>
+          <li class="check-list-item">
+            <button class="btn" type="button" aria-label="Примеры портфолио">Приложения</button>
+          </li>
         </ul>
-        <ul>
-          <li>
-            <img
-              src="./images/porfolio/technocryak.jpg"
-              alt=" Сайт Технокряк"
-              width="370"
-              height="294"
-            />
-            <h2>Технокряк</h2>
-            <p>Веб-сайт</p>
+        <ul class="gallery list">
+          <li class="gallary-list-item">
+            <a class="gallary-list-item link" href=""
+              ><img
+                src="./images/porfolio/technocryak.jpg"
+                alt=" Сайт Технокряк"
+                width="370"
+                height="294"
+              />
+              <h2>Технокряк</h2>
+              <p>Веб-сайт</p>
+              <p>Текст для ховера</p></a
+            >
           </li>
-          <li>
-            <img
-              src="./images/porfolio/new-orlean-vs-golden-star.jpg"
-              alt="Постер New Orlean vs Golden Star "
-              width="370"
-              height="294"
-            />
-            <h2>Постер <span lang="en">New Orlean vs Golden Star</span></h2>
-            <p>Дизайн</p>
+          <li class="gallary-list-item">
+            <a class="gallary-list-item link" href=""
+              ><img
+                src="./images/porfolio/new-orlean-vs-golden-star.jpg"
+                alt="Постер New Orlean vs Golden Star "
+                width="370"
+                height="294"
+              />
+              <h2>Постер <span lang="en">New Orlean vs Golden Star</span></h2>
+              <p>Дизайн</p>
+              <p>Текст для ховера</p></a
+            >
           </li>
-          <li>
-            <img
-              src="./images/porfolio/seafood.jpg"
-              alt="Логотип ресторана Seafood"
-              width="370"
-              height="294"
-            />
-            <h2>Ресторан <span lang="en">Seafood</span></h2>
-            <p>Приложение</p>
+          <li class="gallary-list-item">
+            <a class="gallary-list-item link" href=""
+              ><img
+                src="./images/porfolio/seafood.jpg"
+                alt="Логотип ресторана Seafood"
+                width="370"
+                height="294"
+              />
+              <h2>Ресторан <span lang="en">Seafood</span></h2>
+              <p>Приложение</p>
+              <p>Текст для ховера</p></a
+            >
           </li>
-          <li>
-            <img src="./images/porfolio/prime.jpg" alt="Наушники" width="370" height="294" />
-            <h2>Проект <span lang="en">Prime</span></h2>
-            <p>Маркетинг</p>
+          <li class="gallary-list-item">
+            <a class="gallary-list-item link" href=""
+              ><img src="./images/porfolio/prime.jpg" alt="Наушники" width="370" height="294" />
+              <h2>Проект <span lang="en">Prime</span></h2>
+              <p>Маркетинг</p>
+              <p>Текст для ховера</p></a
+            >
           </li>
-          <li>
-            <img src="./images/porfolio/boxes.jpg" alt="две коробки" width="370" height="294" />
-            <h2>Проект<span lang="en">Boxes</span></h2>
-            <p>Приложение</p>
+          <li class="gallary-list-item">
+            <a class="gallary-list-item link" href=""
+              ><img src="./images/porfolio/boxes.jpg" alt="две коробки" width="370" height="294" />
+              <h2>Проект<span lang="en">Boxes</span></h2>
+              <p>Приложение</p>
+              <p>Текст для ховера</p></a
+            >
           </li>
-          <li>
-            <img src="./images/porfolio/inspiration.jpg" alt="монитор" width="370" height="294" />
-            <h2><span lang="en">Inspiration has no Borders</span></h2>
-            <p>Веб-сайт</p>
+          <li class="gallary-list-item">
+            <a class="gallary-list-item link" href="">
+              <img src="./images/porfolio/inspiration.jpg" alt="монитор" width="370" height="294" />
+              <h2><span lang="en">Inspiration has no Borders</span></h2>
+              <p>Веб-сайт</p>
+              <p>Текст для ховера</p></a
+            >
           </li>
-          <li>
-            <img
-              src="./images/porfolio/limited-edition.jpg"
-              alt="изображение журнала Limited Edition"
-              width="370"
-              height="294"
-            />
-            <h2>Издание<span lang="en">Limited Edition</span></h2>
-            <p>Дизайн</p>
+          <li class="gallary-list-item">
+            <a class="gallary-list-item link" href=""
+              ><img
+                src="./images/porfolio/limited-edition.jpg"
+                alt="изображение журнала Limited Edition"
+                width="370"
+                height="294"
+              />
+              <h2>Издание<span lang="en">Limited Edition</span></h2>
+              <p>Дизайн</p>
+              <p>Текст для ховера</p></a
+            >
           </li>
-          <li>
-            <img
-              src="./images/porfolio/lab.jpg"
-              alt="бирка с логотипом LAB"
-              width="370"
-              height="294"
-            />
-            <h2>Проект <span>LAB</span></h2>
-            <p>Маркетинг</p>
+          <li class="gallary-list-item">
+            <a class="gallary-list-item link" href=""
+              ><img
+                src="./images/porfolio/lab.jpg"
+                alt="бирка с логотипом LAB"
+                width="370"
+                height="294"
+              />
+              <h2>Проект <span>LAB</span></h2>
+              <p>Маркетинг</p>
+              <p>Текст для ховера</p></a
+            >
           </li>
-          <li>
-            <img
-              src="./images/porfolio/growing-busness.jpg"
-              alt="работа за ноутбуком"
-              width="370"
-              height="294"
-            />
-            <h2><span lang="en">Growing Business</span></h2>
-            <p>Приложение</p>
+          <li class="gallary-list-item">
+            <a class="gallary-list-item link" href=""
+              ><img
+                src="./images/porfolio/growing-busness.jpg"
+                alt="работа за ноутбуком"
+                width="370"
+                height="294"
+              />
+              <h2><span lang="en">Growing Business</span></h2>
+              <p>Приложение</p>
+              <p>Текст для ховера</p></a
+            >
           </li>
         </ul>
       </section>
     </main>
     <!-- footer -->
     <footer>
-      <a href="./index.html" title="Перейти на главную страницу"><span>Web</span>Studio</a>
-      <address>
-        <ul>
-          <li>
-            <a
+      <a class="nav-logo" href="./index.html" title="Перейти на главную страницу"><span class="logo-style">Web</span>Studio</a>
+      <address class="contacts">
+        <ul class="contacts list">
+          <li class="contact-list-item">
+            <a class="link"
               href="https://www.google.com/maps/place/%D0%B1%D1%83%D0%BB.+%D0%9B%D0%B5%D1%81%D0%B8+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/@50.4265807,30.5361971,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858"
+              target="_blank"
+              rel="noopener noreferrer"
               title="Посмотреть расположение на карте"
               >Киев, пр-т Леси Украинки, 26</a
             >
           </li>
-          <li>
-            <a href="mailto:info@devstudio.com" title="Отправить письмо">info@devstudio.com</a>
+          <li class="contact-list-item">
+            <a class="link href="mailto:info@devstudio.com" title="Отправить письмо">info@devstudio.com</a>
           </li>
-          <li>
-            <a href="tel:+380961111111" title="Набрать номер">+38 096 111 11 11</a>
+          <li class="contact-list-item">
+            <a class="link href="tel:+380961111111" title="Набрать номер">+38 096 111 11 11</a>
           </li>
         </ul>
       </address>
