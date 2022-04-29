@@ -1,17 +1,34 @@
 :root {
-  --primary-text-color: rgba(117, 117, 117, 100%);
-  --secondary-text-color: rgba(33, 33, 33, 100%);
-  --accent-color-text: rgba(255, 255, 255, 100%);
-  --accent-color-background: rgba(33, 150, 243, 100%);
+  --main-bgc: #ffffff;
+
+  --primary-text-color: #757575;
+  --secondary-text-color: #212121;
+
+  --accent-color-text: #ffffff;
+  --accent-color-background: #2196f3;
 }
 
 body {
-  background-color: rgba(255, 255, 255);
+  background-color: var(--main-bgc);
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.03em;
+}
+
+/* Скрытие логичных заголовков */
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
 /* обнуление дек. ссылок и списков + ховеры и фокусы*/
@@ -20,16 +37,13 @@ body {
   list-style: none;
   text-decoration: none;
 }
-
 .link:hover,
 .link:focus {
   color: var(--accent-color-background);
 }
-
 .btn {
   font-family: inherit;
 }
-
 .btn:hover,
 .btn:focus {
   color: var(--accent-color-text);
@@ -45,16 +59,14 @@ body {
   font-size: 26px;
   line-height: 1.2;
 }
-
 .logo-style-header {
-  color: rgba(0, 0, 0, 100%);
+  color: #000000;
 }
 .logo-style-footer {
   color: var(--accent-color-text);
 }
 
 /* header */
-
 .nav-list-item {
   color: var(--secondary-text-color);
   font-weight: 500;
@@ -62,7 +74,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.marker {
+.current {
   color: var(--accent-color-background);
 }
 .contact-list-item {
@@ -76,20 +88,20 @@ body {
 /* main Студия */
 /* main Студия -Hero */
 .headline {
-  color: rgba(255, 255, 255, 100%);
+  color: var(--accent-color-text);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
 }
 .hero,
 .footer {
-  background-color: rgb(48, 47, 58);
+  background-color: #2f303a;
 }
 .btn {
   cursor: pointer;
 }
 .order {
-  color: rgba(255, 255, 255, 100%);
+  color: var(--accent-color-text);
   background-color: var(--accent-color-background);
   font-weight: 700;
   font-size: 16px;
@@ -97,10 +109,10 @@ body {
 }
 .order:hover,
 .order:focus {
-  background-color: rgb(24, 140, 232);
+  background-color: #188ce8;
 }
-/* main Студия - Особенности */
 
+/* main Студия - Особенности */
 .features-title {
   color: var(--secondary-text-color);
   font-weight: 700;
@@ -110,6 +122,7 @@ body {
 .features-disc {
   line-height: 1.7;
 }
+
 /* main Студия - Чем мы занимаемся */
 .promo-caption,
 .team-caption {
@@ -121,7 +134,7 @@ body {
 
 /* main Студия - Наша команда */
 .team {
-  background-color: rgb(245, 244, 250);
+  background-color: #f5f4fa;
 }
 .team-member {
   color: var(--secondary-text-color);
@@ -140,7 +153,7 @@ body {
 
 /* Footer */
 .address {
-  color: rgba(255, 255, 255, 100%);
+  color: var(--accent-color-text);
   font-style: normal;
   line-height: 1.7;
 }
@@ -157,7 +170,7 @@ body {
   font-size: 16px;
   line-height: 1.6;
 }
-.marker-check {
+.active {
   color: var(--accent-color-text);
   background-color: var(--accent-color-background);
 }
