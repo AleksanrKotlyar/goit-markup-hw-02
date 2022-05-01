@@ -89,6 +89,7 @@ body {
 /* main Студия -Hero */
 .headline {
   color: var(--accent-color-text);
+  text-transform: uppercase;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -116,8 +117,10 @@ body {
 .features-title {
   color: var(--secondary-text-color);
   font-weight: 700;
+  font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  letter-spacing: 0.03em;
 }
 .features-disc {
   line-height: 1.7;
@@ -155,25 +158,40 @@ body {
 .address {
   color: var(--accent-color-text);
   font-style: normal;
+  font-weight: 400;
   line-height: 1.7;
+  letter-spacing: 0.03em;
 }
 .contact {
   color: rgba(255, 255, 255, 60%);
   font-style: normal;
+  font-weight: 400;
   line-height: 1.7;
+  letter-spacing: 0.03em;
 }
 
 /* Portfolio */
+.check-list-item {
+  list-style: none;
+}
 .check {
   color: var(--secondary-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
+  background-color: #f5f4fa;
 }
 .active {
   color: var(--accent-color-text);
   background-color: var(--accent-color-background);
 }
+/* .gallary-caption:focus,
+.gallary-caption:hover,
+.filter-point:focus,
+.filter-point:hover {
+  color: var(--accent-color-background);
+} */
+
 .gallary-caption {
   color: var(--secondary-text-color);
   font-weight: 700;
